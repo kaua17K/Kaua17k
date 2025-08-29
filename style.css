@@ -1,0 +1,144 @@
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Montserrat:wght@400;600&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho e navegação */
+header {
+  background-color: #1e1e2f;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  font-family: 'Lemon', cursive;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff6f61;
+}
+
+/* Banner inicial */
+.inicio-fundo {
+  height: 300px;
+  background: url('img/banner.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Lemon', cursive;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* Sessões de música */
+.sessao {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sessao:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.sessao h2 {
+  font-family: 'Lemon', cursive;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #1e1e2f;
+}
+
+.sessao img {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.sessao img:hover {
+  transform: scale(1.05);
+}
+
+.sessao p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #1e1e2f;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Botões e links */
+button, .button {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+button:hover, .button:hover {
+  background-color: #ff3b2f;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sessao img {
+    width: 100%;
+  }
+}
